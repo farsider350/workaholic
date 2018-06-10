@@ -116,30 +116,11 @@ $.getJSON(servaddr + '/recent_blocks', function(blocks) {
     <!-- content body --> 
     <!-- ########################################################################################## --> 
     <!-- ########################################################################################## -->
- <h1>Pool Payouts if a block was found <em>now</em></h1>
-<ul>
-	<li>
-		Total pool Ghash/sec: <span id="hashrate"></span>
-	</li>
-	<li>
-		Payouts if block was found NOW: 
-		<table border="1" id="payouts">
-			<tr>
-				<th>address</th>
-				<th>amount in DGB</th>
-			</tr>
-		</table>
-	</li>
-	<li>
-		Blocks found in the past 12hrs, any blocks before that will not show here: <br />
-		<table border="1" id="blocks">
-			<tr>
-				<th>time</th>
-				<th>hash</th>
-			</tr>
-		</table>
-	</li>
-</ul>
+<iframe src="http://zenfarm.ddns.net:5025/static/site-stats/current_payouts.html" width="100%" height="1000" style="margin-left:auto; margin-right:auto;">
+    <!-- The following is displayed if the browser doesn't 
+         support iFrames (unlikely scenario nowadays). -->
+    <p>Your browser does not support iframes.</p>
+</iframe>
 <p>Pool URL: stratum+tcp://triple-zen.ddns.net:5025<br>
 	Alternate: stratum+tcp://zenfarm.ddns.net:5025<br>
 	User ID: Your Digibyte Core Wallet Address followed by /0<br>
